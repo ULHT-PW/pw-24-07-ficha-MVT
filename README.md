@@ -1,7 +1,7 @@
 Univesidade Lusófona
 **Programação Web**
 
-# Ficha 7: Aplicações web
+# Ficha 7: Construção de Aplicações Web com Django, a web framework para perfeccionistas com deadlines
 
 ### Objetivo:
 * Familiarizar-se com todas  as camadas da arquitetura MVT (Model, View e Template).
