@@ -96,7 +96,7 @@ from . import views  # importamos views para poder usar as suas funções
 
 urlpatterns = [
   # ...
-  path('musica/<int:musica_id', views.musica_view, name='musica_url')
+  path('musica/<int:musica_id>', views.musica_view, name='musica_url')
 ]
 ```
 
