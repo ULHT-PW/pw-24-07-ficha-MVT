@@ -34,14 +34,38 @@ A aplicação irá ser composta por:
 4. página de uma música, que mosta informação disponível.
 
 Para tal, siga os seguintes passos:
-1. 🔧 em `project/settings.py` já está declarada a aplicação `bandas`. Adicione em `project/urls.py` uma rota para `bandas.urls` [[1]](https://github.com/ULHT-PW/pw-24-06-ficha-MVT/blob/main/README.md#5-urlspy-%EF%B8%8F)
-2. ⚙️ crie uma view para renderizar cada uma das 4 páginas anteriormente identificadas. Em cada função-view deverá recolher com métodos ORM da base de dados os dados necessários para renderizar a página HTML 
 
-3. `<>` crie a pasta `templates/novaapp`, e de um conjunto de pelo menos 3 ficheiros HTML simples, com conteúdos a seu gosto. se não tiver ideias de texto, pode usar https://www.lipsum.com/ para gerar texto em latim. o importante não é o conteudo, mas os passos do processo. Todas as páginas deverão ter um `header` e `footer` semelhante.
-4.  ⚙️ definição em views.py de funções que renderizem os templates.
-5. ✉️ criação do ficheiro `novaapp/urls.py` (use como base o ficheiro `project/urls.py`), definindo um `app_name`, e em urlpatterns os paths com URLs e respetivas funções em views com um `name` cada.
-6. 🔗 criação de menu de navegação com hiperlinks para todas as páginas, que deverá estar presente no header de todas as páginas criadas.
-7. ⟳ Recarregar (reload) a aplicação. Eventuais erros serão apresentados de forma explícita, pois está em modo debug.
+### 1. Configuração 🔧
+
+1. Em `project/settings.py` já deverá estar declarada a aplicação `bandas`. 
+2. Em `project/urls.py`, adicione uma rota para `bandas.urls` [[1]](https://github.com/ULHT-PW/pw-24-06-ficha-MVT/blob/main/README.md#5-urlspy-%EF%B8%8F)
+
+### 2. Camada de View ⚙️
+
+1. Em views.py, crie uma função-view para cada uma das 4 páginas a retornar (no nome da função use o prefixo _view).
+2. Em cada função-view deverá recolher da base de dados, com métodos ORM, os dados necessários para a página HTML.
+
+### 3. Camada de Template `<>` 
+
+1. crie a pasta `templates/bandas`
+2. crie 4 ficheiros HTML, um para cada página da sua aplicação.
+3. renderize a página, inserindo conteúdos da abse de dados usandoa linguagem de template Django. 
+
+### 4. Camada de URLConfig ✉️ 
+
+1. ✉️ na pasta `project/bandas` crie o ficheiro `urls.py`. Use como base o ficheiro `project/urls.py`
+1. Defina um `app_name`
+1. Defina em `urlpatterns` o mapeamento de URLs para respetivas funções-views.
+1. Atribua um `name` a cada path.
+
+### 5. Hiperlinks 🔗 
+
+* Crie um elemento de navegação `<nav>` que permita voltar para páginas hierárquicamente superiores (se esta num album, deve poder voltar para a respetiva banda).
+* para a lista de elementos (por exemplo, na página álbum, a lista de músicas), insira em cada música um link que encaminhe para a página dessa música.
+
+### 5. Reload ⟳ 
+
+*  Recarregar (reload) a aplicação. Eventuais erros serão apresentados de forma explícita, pois está em modo debug.
 
 # aplicação artigos
 Para a aplicação artigos, implemente as partes View e Template de modo a poder visualizar a informação num browser.
