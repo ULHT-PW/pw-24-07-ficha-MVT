@@ -66,16 +66,17 @@ Para tal, siga os seguintes passos:
 
 ### 6. Exemplo de Implementação do Padrão MVT no Django
 
-#### musica.html
+Exemplo de template HTML para a página que renderiza informação de um album:
 ```html
-<!-- musica.html -->
+<!-- album.html -->
 <html>
 <body>
     <ul>
+    <h1> {{ album.banda }} </h1>
+
+    <h3> Album: {{ album.nome }}, {{ album.ano }} </h3>
     
-    <h3> {{ album.nome }} </h3>
-    
-    <p>Lista de músicas:</p>
+    <p>Lista de músicas do álbum:</p>
     {% for musica in album.musicas.all %}
        <li>
           <a href="{% url 'musica_url' musica.id %}">{{ musica }}</a>    
@@ -86,6 +87,7 @@ Para tal, siga os seguintes passos:
 </html>
 ```
 
+Exemplo de rota associada ao link acima apresentado:
 ```python
 # bandas/urls.py
 
@@ -98,8 +100,7 @@ urlpatterns = [
 ]
 ```
 
-
-#### view
+Exemplo de função-view associada à rota:
 ```python
 # bandas/views.py
 
@@ -113,7 +114,7 @@ def musica_view(request, musica_id):
    return render(request, 'bandas/musica.html', context)
 ```
 
-### 5. Reload ⟳ 
+## 5. Reload ⟳ 
 
 *  Recarregar (reload) a aplicação. Eventuais erros serão apresentados de forma explícita, pois está em modo debug.
 
