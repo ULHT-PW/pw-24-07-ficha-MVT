@@ -42,7 +42,7 @@ Para tal, siga os seguintes passos:
 
 ### 2. Camada de View ⚙️
 
-1. Em views.py, crie uma função-view para cada uma das 4 páginas a retornar (no nome da função use o prefixo _view).
+1. Em views.py, crie uma função-view para cada uma das 4 páginas a retornar (no nome da função use o prefixo _view) [[2]](https://github.com/ULHT-PW/pw-24-06-ficha-MVT/blob/main/README.md#4-camada-de-view-implementada-por-viewspy-%EF%B8%8F).
 2. Em cada função-view deverá recolher da base de dados, com métodos ORM, os dados necessários para a página HTML.
 
 ### 3. Camada de Template `<>` 
@@ -53,15 +53,65 @@ Para tal, siga os seguintes passos:
 
 ### 4. Camada de URLConfig ✉️ 
 
-1. ✉️ na pasta `project/bandas` crie o ficheiro `urls.py`. Use como base o ficheiro `project/urls.py`
+1. ✉️ na pasta `project/bandas` crie o ficheiro `urls.py`. Use como base o ficheiro `project/urls.py` [[3]](https://github.com/ULHT-PW/pw-24-06-ficha-MVT/blob/main/README.md#5-urlspy-%EF%B8%8F)
 1. Defina um `app_name`
 1. Defina em `urlpatterns` o mapeamento de URLs para respetivas funções-views.
 1. Atribua um `name` a cada path.
 
 ### 5. Hiperlinks 🔗 
 
-* Crie um elemento de navegação `<nav>` que permita voltar para páginas hierárquicamente superiores (se esta num album, deve poder voltar para a respetiva banda).
-* para a lista de elementos (por exemplo, na página álbum, a lista de músicas), insira em cada música um link que encaminhe para a página dessa música.
+* Crie um elemento de navegação `<nav>` que permita voltar para páginas hierárquicamente superiores (se esta num album, deve poder voltar para a respetiva banda). [[3]](https://github.com/ULHT-PW/pw-24-06-ficha-MVT/blob/main/README.md#6-hiperlinks-)
+* em listas de elementos (por exemplo, na página álbum, a lista de músicas), insira em cada música um link que encaminhe para a página dessa música.
+
+
+### 6. Exemplo de Implementação do Padrão MVT no Django
+
+#### musica.html
+```html
+<!-- musica.html -->
+<html>
+<body>
+    <ul>
+    
+    <h3> {{ album.nome }} </h3>
+    
+    <p>Lista de músicas:</p>
+    {% for musica in album.musicas.all %}
+       <li>
+          <a href="{% url 'musica_url' musica.id %}">{{ musica }}</a>    
+       </li>
+    {% endfor%}
+    </ul>
+</body>
+</html>
+```
+
+```python
+# bandas/urls.py
+
+from django.urls import path
+from . import views  # importamos views para poder usar as suas funções
+
+urlpatterns = [
+  # ...
+  path('musica/<int:musica_id', views.musica_view, name='musica_url')
+]
+```
+
+
+#### view
+```python
+# bandas/views.py
+
+from django.shortcuts import render
+from .models import Musica
+
+def musica_view(request, musica_id):
+   context = {
+      'musica': Musica.objects.get(id=musica_id),
+   }
+   return render(request, 'bandas/musica.html', context)
+```
 
 ### 5. Reload ⟳ 
 
