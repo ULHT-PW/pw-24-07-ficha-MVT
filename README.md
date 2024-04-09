@@ -14,7 +14,8 @@ Univesidade Lusófona
 * C. Aplicação curso 🎓
 
 
-# Necessidades
+# Requisitos
+conhecimentos de:
 * linguagem template: variáveis, if, for. iteração de listas e dicionarios. acesso a atributos de objeto. filtros.
 * herança com layout base
 * rotas com variáveis
