@@ -9,11 +9,9 @@ Univesidade Lusófona
 * Familiarizar-se com a criação de aplicações web que interagem com a base de dados.
 
 ### Índice:
-* &alpha;. Introdução ao HTML `<>`
-* A. noobsite, páginas soltas 👶
-* B. pwsite, o meu primeiro website 😎
-* C. website a seu gosto 😎
-* &omega; Entrega 📦
+* A. Aplicação bandas 🎸
+* B. Aplicação artigos 📚
+* C. Aplicação curso 🎓
 
 
 # Necessidades
@@ -24,7 +22,7 @@ Univesidade Lusófona
 * mostrar imagens, links, descarregar ficheiros, vídeos
 
 
-# Aplicação web bandas 🎸
+# A. Aplicação web bandas 🎸
 Na aplicação das bandas, onde já construiu a camada Model de modelação, vamos implementar as camadas de View e de Template, de modo a poder visualizar os dados num browser através de um conjunto de páginas. 
 
 A aplicação irá ser composta por:
@@ -118,10 +116,10 @@ def musica_view(request, musica_id):
 
 *  Recarregar (reload) a aplicação. Eventuais erros serão apresentados de forma explícita, pois está em modo debug.
 
-# Aplicação artigos 📚
+# B. Aplicação artigos 📚
 Na aplicação artigos, para a qual já fez a camada de modelação, implemente as mesmas camadas anteriores de modo a poder visualizar a informação num browser.
 
-# Aplicação curso 🎓
+# C. Aplicação curso 🎓
 Na aplicação do seu curso, para a qual já fez a camada de modelação, implemente as camadas que na app das bandas, de modo vamos criar uma aplicação web que permita visualizar os dados disponiveis na base de dados através de um conjunto de paginas. 
 
 A aplicação deverá ter pelo menos 3 views, que permitam renderizar:
