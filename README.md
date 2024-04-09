@@ -24,7 +24,7 @@ Univesidade Lusófona
 * mostrar imagens, links, descarregar ficheiros, vídeos
 
 
-# aplicação web bandas 🎸
+# Aplicação web bandas 🎸
 Na aplicação das bandas, onde já construiu a camada Model de modelação, vamos implementar as camadas de View e de Template, de modo a poder visualizar os dados num browser através de um conjunto de páginas. 
 
 A aplicação irá ser composta por:
@@ -67,10 +67,10 @@ Para tal, siga os seguintes passos:
 
 *  Recarregar (reload) a aplicação. Eventuais erros serão apresentados de forma explícita, pois está em modo debug.
 
-# aplicação artigos
+# Aplicação artigos 📚
 Na aplicação artigos, para a qual já fez a camada de modelação, implemente as mesmas camadas anteriores de modo a poder visualizar a informação num browser.
 
-# aplicação curso
+# Aplicação curso 🎓
 Na aplicação do seu curso, para a qual já fez a camada de modelação, implemente as camadas que na app das bandas, de modo vamos criar uma aplicação web que permita visualizar os dados disponiveis na base de dados através de um conjunto de paginas. 
 
 A aplicação deverá ter pelo menos 3 views, que permitam renderizar:
