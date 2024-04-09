@@ -68,11 +68,12 @@ Para tal, siga os seguintes passos:
 *  Recarregar (reload) a aplicação. Eventuais erros serão apresentados de forma explícita, pois está em modo debug.
 
 # aplicação artigos
-Para a aplicação artigos, implemente as partes View e Template de modo a poder visualizar a informação num browser.
+Na aplicação artigos, para a qual já fez a camada de modelação, implemente as mesmas camadas anteriores de modo a poder visualizar a informação num browser.
 
 # aplicação curso
-Para a aplicação do seu curso, para a qual já fez uma modelação, vamos criar uma aplicação web que permita visualizar os dados disponiveis na base de dados através de um conjunto de paginas. Irá construir páginas para:
-1. página com a lista de bandas.
-2. página duma banda, com lista de albuns.
-3. pagina de album, que mostra informação do album e a lista das músicas.
-4. pagina de uma música, que mosta informação disponível.
+Na aplicação do seu curso, para a qual já fez a camada de modelação, implemente as camadas que na app das bandas, de modo vamos criar uma aplicação web que permita visualizar os dados disponiveis na base de dados através de um conjunto de paginas. 
+
+A aplicação deverá ter pelo menos 3 views, que permitam renderizar:
+1. página do curso.
+1. página de disciplina do curso.
+1. página de projeto da disciplina do curso.
