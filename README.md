@@ -30,7 +30,7 @@ Na aplicação das bandas, onde já construiu a camada Model de modelação, vam
 A aplicação irá ser composta por pelo menos as 4 seguintes bandas (se fizer uma página adicional que explore a base de dados de forma diferente terá uma bonificação):
 1. página com a lista de bandas.
 2. página duma banda, com lista de albuns.
-3. página de album, que mostra informação do album e a lista das músicas.
+3. página de album, que mostra informação do album, incluindo a imagem da capa (ver aplicação bibliotecalusofona ()), e a lista das músicas.
 4. página de uma música, que mosta informação disponível.
 
 Para tal, siga os seguintes passos.
