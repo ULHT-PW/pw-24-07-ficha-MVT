@@ -51,7 +51,8 @@ Para tal, siga os seguintes passos.
 1. crie a pasta `templates/bandas`
 2. crie um template layout.html (pai) que será "estendido" pelas páginas do site (filhos).
 3. crie 4 ficheiros HTML, um para cada página da sua aplicação. Utilize as variáveis de contexto enviadas pela view
-4. insira conteúdos da base de dados usando a linguagem de template Django. 
+4. insira conteúdos da base de dados usando a linguagem de template Django.
+5. crie pelo menos um customtag, filtro criado por si para uma funcionalidade específica.
 
 ### 4. Camada de URLConfig ✉️ 
 
