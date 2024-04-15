@@ -7,8 +7,9 @@ Univesidade Lusófona
 * Familiarizar-se com todas  as camadas da arquitetura MVT (Model, View e Template).
 * Familiarizar-se com a linguagem de template do Django
 * Familiarizar-se com a criação de aplicações web que interagem com a base de dados.
+* Continuar a desenvolver as aplicações iniciadas na ficha 4 e 5.
 
-### Índice:
+### Aplicações a aprimorar:
 * A. Aplicação bandas 🎸
 * B. Aplicação artigos 📚
 * C. Aplicação curso 🎓
