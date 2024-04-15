@@ -88,7 +88,7 @@ Exemplo de template HTML para a página que renderiza informação de um album:
 </html>
 ```
 
-Exemplo de rota associada ao link acima apresentado:
+Exemplo de rota associada ao link associado a uma música, acima apresentado:
 ```python
 # bandas/urls.py
 
@@ -102,7 +102,7 @@ urlpatterns = [
 ]
 ```
 
-Exemplo de função-view associada à rota:
+Exemplo de view associada à rota a pedir uma música:
 ```python
 # bandas/views.py
 
