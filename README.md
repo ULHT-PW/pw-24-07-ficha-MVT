@@ -16,12 +16,7 @@ Univesidade Lusófona
 
 
 # Requisitos
-conhecimentos de:
-* linguagem template: variáveis, if, for. iteração de listas e dicionarios. acesso a atributos de objeto. filtros.
-* herança com layout base
-* rotas com variáveis
-* ficheiros estáticos (CSS e imagens), collectstatic
-* mostrar imagens, links, descarregar ficheiros, vídeos
+Revisite os slides da aula e a aplicação [Bibiloteca da Lusofonía](https://github.com/ULHT-PW/bibliotecalusofona/tree/4a6800349d89af51cf9c4365d1f9f2f58d581820/biblioteca).
 
 
 # A. Aplicação web bandas 🎸
